@@ -6,7 +6,7 @@
         <q-btn dense flat round icon="menu" @click="left = !left" />
 
         <q-toolbar-title class="text-weight-bold">
-          <span class="gt-sm">Britter</span>
+          <span class="gt-sm">{{ $route.name }}</span>
            <q-icon
       class="header-icon q-pa-md lt-md"
       name="fab fa-affiliatetheme"
@@ -23,15 +23,15 @@
       name="fab fa-affiliatetheme"
       size="lg"
       color="primary"/>
-      <q-list >
-      <q-item to="/" clickable v-ripple>
+      <q-list>
+      <q-item to="/" clickable v-ripple exact>
         <q-item-section avatar>
-          <q-icon color="primary" name="home" size="md" />
+          <q-icon name="home" size="md" />
         </q-item-section>
 
         <q-item-section class="text-h6 text-wight-bold">Home</q-item-section>
       </q-item>
-      <q-item to="/about" clickable v-ripple>
+      <q-item to="/about" clickable v-ripple exact>
         <q-item-section avatar>
           <q-icon name="help" size="md" />
         </q-item-section>
