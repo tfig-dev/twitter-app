@@ -6,7 +6,12 @@
         <q-btn dense flat round icon="menu" @click="left = !left" />
 
         <q-toolbar-title class="text-weight-bold">
-          Britter
+          <span class="gt-sm">Britter</span>
+           <q-icon
+      class="header-icon q-pa-md lt-md"
+      name="fab fa-affiliatetheme"
+      size="sm"
+      color="primary"/>
         </q-toolbar-title>
 
       </q-toolbar>
@@ -88,3 +93,11 @@ export default {
   }
 }
 </script>
+
+<style lang="sass">
+.header-icon
+  position: absolute
+  bottom: 0
+  left: 50%
+  transform: translateX(-50%)
+</style>
